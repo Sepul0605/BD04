@@ -14,14 +14,14 @@ public class Main {
     System.out.println("El saldo actual es " + saldoActual);
 
     try {
-        cuenta1.retirar(cantidad);  // No modificamos este valor fijo
+        cuenta1.retirar(cantidad); 
     } catch (Exception e) {
         System.out.print("Fallo al retirar");
     }
     
     try {
         System.out.println("Ingreso en cuenta");
-        cuenta1.ingresar(cantidad);  // No modificamos este valor fijo
+        cuenta1.ingresar(cantidad);  
     } catch (Exception e) {
         System.out.print("Fallo al ingresar");
     }

@@ -77,7 +77,10 @@ public class CCuenta {
     public double estado() {
         return getSaldo();
     }
-
+    
+    /* Metodo encargado de verificar si la cantidad a ingresar tiene un valor
+    inferior a 0, en caso de serlo, salta una excepción y muestra mensaje
+    en pantalla */
     public void ingresar(double cantidad) throws Exception {
         if (cantidad < 0) {
             throw new Exception("No se puede ingresar una cantidad negativa");
